@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <div id="welcome" class="font-80-px text-red">Let's do math</div>
+      <div class="container background-white" id="div-1">
+        <h1>Hello!</h1>
+        <p>
+          Name: <input type="text" required placeholder="Gillian" id="name" />
+        </p>
+        <p>
+          Age: <input type="number" required placeholder="6" id="age" min="3" />
+        </p>
+        <p>
+          Girl &#x1F467;:
+          <input type="radio" value="girl" name="girl-boy" id="girly" /> Boy
+          &#x1F466;:
+          <input type="radio" value="boy" name="girl-boy" id="boyish" />
+        </p>
+        <button type="button" id="submit" onclick="submit()">enter</button>
+      </div>
+
+      <div class="container display-hidden" id="div-2">
+        <div>
+          <button id="addition" onclick="add()">addition (&#x2795;)</button>
+          <button id="subtraction" onclick="subtraction()">
+            subtraction (&#x2796;)
+          </button>
+          <button id="multiplication" onclick="multiplication()">
+            multiplication (&#x2716;)
+          </button>
+          <button id="division" onclick="division()">
+            division (&#x2797;)
+          </button>
+        </div>
+        <p>enter your numbers</p>
+        <span>
+          <input type="text" id="num1" />
+          <input type="text" class="input-10" id="symbol" />
+          <input type="text" id="num2" />
+        </span>
+        <br />
+        <button id="answer" onclick="answer()">answer</button>
+        <br />
+        <button id="next" onclick="next()">next</button>
+
+        <button id="back" onclick="back()">back</button>
+      </div>
+      <div id="div-3" class="display-hidden">
+        <div id="num" class="background-white"></div>
+
+        <div class="buttons">
+          <button id="zero">zero</button>
+          <button id="one">one</button>
+          <button id="two">two</button>
+          <button id="three">three</button>
+          <button id="four">four</button>
+          <button id="five">five</button>
+          <button id="six">six</button>
+          <button id="seven">seven</button>
+          <button id="eight">eight</button>
+          <button id="nine">nine</button>
+        </div>
+        <button id="back1" onclick="back1()">back</button>
+      </div>
+
+      <script src="./js/main.js"></script>
+    </div>
+    <div class="container display-hidden background-cadet" id="div-2"></div>
+  </body>
+</html>
